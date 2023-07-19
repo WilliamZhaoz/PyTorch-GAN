@@ -140,8 +140,11 @@ def sample_image(n_row, batches_done):
 # ----------
 #  Training
 # ----------
+epoch = 0
+while True:
+    epoch += 1
 
-for epoch in range(opt.n_epochs):
+# for epoch in range(opt.n_epochs):
     for i, (imgs, labels) in enumerate(dataloader):
 
         batch_size = imgs.shape[0]
